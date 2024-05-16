@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warner Bros - Home</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="./index.html" class="logo">
+          <img
+            src="./assets/images/warnerbroslogo.svg"
+            alt="Warner Bros logo"
+          />
+        </a>
+
+        <div class="header-actions">
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <div class="lang-wrapper">
+            <label for="language">
+              <ion-icon name="globe-outline"></ion-icon>
+            </label>
+
+            <select name="language" id="language">
+              <option value="en">EN</option>
+              <option value="au">AU</option>
+              <option value="ar">AR</option>
+              <option value="tu">TU</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./index.html" class="logo">
+              <img
+                src="./assets/images/warnerbroslogo.svg"
+                alt="Warner Bros logo"
+              />
+            </a>
+
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="./index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="./movie-list.html" class="navbar-link">Movies</a>
+            </li>
+
+            <li>
+              <a href="./series-list.html" class="navbar-link">Tv Shows</a>
+            </li>
+
+            <li>
+              <a href="./games-apps.html" class="navbar-link">Games & Apps</a>
+            </li>
+
+            <li>
+              <a href="./collecttions.html" class="navbar-link">Collections</a>
+            </li>
+
+            <li>
+              <a href="./feedback.html" class="navbar-link">Feedback</a>
+            </li>
+
+            <li>
+              <a href="./about.html" class="navbar-link">About Us</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-social-list">
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Feedback Form</h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="upcoming">
+          <div class="container">
+            <form action="feedback-submitted.html">
+              <div class="input-wrapper">
+                <div class="mid-size">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Your name ..."
+                    required
+                  />
+                </div>
+
+                <div class="mid-size">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Your last name ..."
+                    required
+                  />
+                </div>
+              </div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="emailaddress"
+                placeholder="Your email ..."
+                required
+              />
+
+              <label for="age">Select Age</label>
+              <select id="age" name="age">
+                <option value="13-18">13 - 18 years</option>
+                <option value="19-25">19 - 25 years</option>
+                <option value="26-35">26 - 35 years</option>
+                <option value="36-above">36 and Above</option>
+              </select>
+
+              <label for="gender">Select Gender</label>
+              <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Prefer not to say</option>
+              </select>
+
+              <label for="scale"
+                >On a scale from 1 - 5, 1 being the worst and 5 being the best,
+                how satisfied are you with the service we provided?</label
+              >
+              <select id="scale" name="scale">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+
+              <label for="features"
+                >What are your favorite features of the Warner Bros
+                Website?</label
+              >
+              <input
+                type="text"
+                id="features"
+                name="features"
+                placeholder="Type here ..."
+                required
+              />
+
+              <label for="improve"
+                >What can we do to improve your experience with us?
+                (optional)</label
+              >
+              <input
+                type="text"
+                id="improve"
+                name="improve"
+                placeholder="Type here ..."
+              />
+
+              <label for="comments">Additional Comments (optional)</label>
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Type here ..."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand-wrapper">
+            <a href="./index.html" class="logo">
+              <img
+                src="./assets/images/warnerbroslogo.svg"
+                alt="Warner Bros logo"
+              />
+            </a>
+
+            <ul class="footer-list">
+              <li>
+                <a href="./index.html" class="footer-link">Home</a>
+              </li>
+
+              <li>
+                <a href="./movie-list.html" class="footer-link">Movies</a>
+              </li>
+
+              <li>
+                <a href="./series-list.html" class="footer-link">TV Shows</a>
+              </li>
+
+              <li>
+                <a href="./games-apps.html" class="footer-link">Games & Apps</a>
+              </li>
+
+              <li>
+                <a href="./collecttions.html" class="footer-link"
+                  >Collections</a
+                >
+              </li>
+
+              <li>
+                <a href="./feedback.html" class="footer-link">Feedback</a>
+              </li>
+
+              <li>
+                <a href="./about.html" class="footer-link">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="quicklink-wrapper">
+            <ul class="quicklink-list">
+              <li>
+                <a href="#" class="quicklink-link">Faq</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Help center</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Terms of use</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Privacy</a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 Warner Bros. <a href="#">BIDA23-188</a>. All Rights
+            Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
